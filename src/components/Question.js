@@ -1,14 +1,14 @@
-
+import Button from 'react-bootstrap/Button';
 export default function Question({ jeopardyQuest, getJeopardyQuest }) {
      return (
           <>
-          <button className ='button' onClick={getJeopardyQuest}>Start</button>
-       <h1>
+          <Button className ='Button' onClick={getJeopardyQuest}>Start</Button>
+     
           {jeopardyQuest && jeopardyQuest.value ? (
 <>{jeopardyQuest.question}? </>
           ) : (
                <>??????</>
-          )}</h1>
+          )}
           
           </>
      );
