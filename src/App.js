@@ -25,6 +25,7 @@ export default function App() {
       setScore(score + jeopardyQuest.value);
     }
   }
+  
 
   const getDecrementPoints = () => {
     if (jeopardyQuest && jeopardyQuest.value) {
